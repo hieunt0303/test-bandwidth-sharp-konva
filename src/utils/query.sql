@@ -1,0 +1,13 @@
+CREATE TABLE staff (
+  id_staff VARCHAR(20) NOT NULL,
+  name VARCHAR(20),
+  phone VARCHAR(20),
+  CCCD INT,
+  sex VARCHAR(10),
+  birth DATE,
+  avatar_url VARCHAR(100),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (id_staff)
+);
+DROP Table staff
